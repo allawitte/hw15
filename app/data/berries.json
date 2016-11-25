@@ -1,0 +1,48 @@
+[
+  {
+  "name": "Cheri Berry",
+  "option": "Cures paralysis"
+}, {
+  "name": "Chesto Berry",
+  "option": "Cures sleep"
+}, {
+  "name": "Pecha Berry",
+  "option": "Cures poison"
+}, {
+  "name": "Rawst Berry",
+  "option": "Cures burn"
+}, {
+  "name": "Aspear Berry",
+  "option": "Cures freeze"
+}, {
+  "name": "Leppa Berry",
+  "option": "Restores 10 PP"
+}, {
+  "name": "Oran Berry",
+  "option": "Restores 10 HP"
+}, {
+  "name": "Persim Berry",
+  "option": "Cures confusion"
+}, {
+  "name": "Lum Berry",
+  "option": "Cures any status condition and confusion"
+}, {
+  "name": "Sitrus Berry",
+  "option": "Restores 30 HPGen III/25% HPGen IV+"
+}, {
+  "name": "Figy Berry",
+  "option": "Restores 12.5% HP, confuses Pokémon that dislike spicy food"
+}, {
+  "name": "Wiki Berry",
+  "option": "Restores 12.5% HP, confuses Pokémon that dislike dry food"
+}, {
+  "name": "Mago Berry",
+  "option": "Restores 12.5% HP, confuses Pokémon that dislike sweet food"
+}, {
+  "name": "Aguav Berry",
+  "option": "Restores 12.5% HP, confuses Pokémon that dislike bitter food"
+}, {
+  "name": "Iapapa Berry",
+  "option": "Restores 12.5% HP, confuses Pokémon that dislike bitter food"
+}
+]

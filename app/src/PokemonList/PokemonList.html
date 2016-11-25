@@ -1,0 +1,68 @@
+<style>
+
+   .preload {
+        background: transparent url("loading-animation.gif") no-repeat scroll center center;
+       display: block;
+       margin: 20px auto;
+    }
+</style>
+<div class="panel panel-default">
+    <div class="panel-body">
+
+        Найти:
+        <input ng-model="myQuery"><br><br>
+
+        Сортировать по:
+        <select ng-model="myOrderProperty">
+            <option value="id">ID</option>
+            <option value="weight">Весу</option>
+            <option value="height">Росту</option>
+        </select>
+
+    </div>
+</div>
+<img src="preload.gif" alt="" class="preload" ng-if="dataLoading"/>
+<div class="row">
+    <div class="col-md-6">
+        <div class="list-group">
+            <a class="list-group-item" ng-repeat="singlePokemon in pokemons | filter:myQuery | orderBy:myOrderProperty"
+               href="#/pokemons/{{singlePokemon.objectId }}">
+                <h4 class="list-group-item-heading">
+                    <span class="badge">{{singlePokemon.objectId }}</span>
+                    {{singlePokemon.name | uppercase }}
+                </h4>
+
+                <p class="list-group-item-text">
+                    Вес:
+                    {{singlePokemon.weight}}, рост:
+                    {{singlePokemon.height}}
+                </p>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="list-group">
+            <div class="list-group-item" ng-repeat="berrie in berries">
+                <h4 class="list-group-item-heading">
+                    <span class="badge">{{berrie.objectId }}</span>
+                    {{berrie.name | uppercase }}
+                </h4>
+                <p class="list-group-item-text">
+                    Вес:
+                    {{berrie.option}}
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panel-default" ng-show="myQuery">
+    <div class="panel-body">
+
+        <p>
+            Выведены покемоны, содержащие
+            {{myQuery}}
+        </p>
+
+    </div>
+</div>
